@@ -1,50 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futuristic Website</title>
-    <!-- Link to CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Website</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Welcome to the Future</h1>
-            <p>Cutting-edge designs that redefine possibilities.</p>
-            <a href="#about" class="cta-btn">Learn More</a>
-        </div>
+  <div id="loading">
+    <div class="spinner"></div>
+    <p>Loading...</p>
+  </div>
+  <div id="content">
+    <header>
+      <h1>Welcome to My Modern Website</h1>
+      <p>Experience elegance and simplicity.</p>
     </header>
     <main>
-        <section id="about" class="about">
-            <h2>About Us</h2>
-            <p>We craft experiences that blend innovation, creativity, and technology.</p>
-        </section>
-        <section id="services" class="services">
-            <h2>Our Services</h2>
-            <div class="service-card">
-                <h3>UX/UI Design</h3>
-                <p>Beautiful interfaces that captivate and engage users.</p>
-            </div>
-            <div class="service-card">
-                <h3>Web Development</h3>
-                <p>Scalable, responsive, and high-performance websites.</p>
-            </div>
-            <div class="service-card">
-                <h3>Consulting</h3>
-                <p>Strategies to bring your digital dreams to life.</p>
-            </div>
-        </section>
-        <section id="contact" class="contact">
-            <h2>Contact Us</h2>
-            <p>Let’s work together to create something extraordinary.</p>
-            <a href="mailto:contact@example.com" class="contact-btn">Email Us</a>
-        </section>
+      <section>
+        <h2>About Us</h2>
+        <p>This is where you introduce the purpose of the website.</p>
+      </section>
     </main>
-    <footer class="footer">
-        <p>© 2025 Futuristic Website. All Rights Reserved.</p>
+    <footer>
+      <p>&copy; 2025 Modern Design Co.</p>
     </footer>
+  </div>
+  <script>
+    // Simulate loading animation
+    window.addEventListener('load', () => {
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('content').style.display = 'block';
+    });
+  </script>
 </body>
 </html>
