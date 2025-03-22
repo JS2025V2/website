@@ -3,34 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Website</title>
+    <title>Ultra-Modern Website</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Modern Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <h1>Welcome to My Modern Website</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section id="about">
-        <h2>About Us</h2>
-        <p>This website is now modern, sleek, and professional!</p>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We bring cutting-edge designs and technology to life. Our mission is to create user-friendly, visually stunning websites that make a lasting impact.</p>
+        </div>
     </section>
-    <section id="services">
-        <h2>Our Services</h2>
-        <p>We offer advanced features to make your website stand out.</p>
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Web Design</h3>
+                    <p>Stunning, user-centered designs to captivate your audience.</p>
+                </div>
+                <div class="card">
+                    <h3>Development</h3>
+                    <p>Advanced technology solutions to bring your ideas to life.</p>
+                </div>
+                <div class="card">
+                    <h3>Branding</h3>
+                    <p>Build your identity with a cohesive and professional look.</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Reach us at <a href="mailto:example@example.com">example@example.com</a>.</p>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email us at <a href="mailto:example@example.com">example@example.com</a> to start your journey today!</p>
+        </div>
     </section>
-    <footer>
-        <p>© 2025 My Modern Website. All Rights Reserved</p>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Ultra-Modern Website. All Rights Reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
