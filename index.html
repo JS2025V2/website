@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="hero">
         <div class="hero-content">
             <h1>Hi nerds</h1>
             <p>Foot work ahh</p>
-          <!--  <a href="#about" class="cta-btn">Learn More</a> -->
         </div>
     </header>
 
@@ -26,7 +27,10 @@
                 <input type="text" id="username" placeholder="Username" required>
                 <input type="password" id="password" placeholder="Password" required>
                 <button type="submit" class="cta-btn">Login</button>
-                <div id="error-message" class="error-message"></div>
+                <!-- Updated error message section -->
+                <div id="error-message" class="error-msg">
+                    <i class="fa fa-warning"></i> Invalid username or password.
+                </div>
             </form>
         </section>
 

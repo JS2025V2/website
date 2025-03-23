@@ -1,24 +1,17 @@
 // login.js
-document.getElementById('login-form').addEventListener('submit', function (event) {
-    event.preventDefault();
 
-    // Get the username and password
+document.getElementById('login-form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Dummy condition for invalid login (replace with actual validation)
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    // Simple username and password check
-    const validUsername = 'user123';
-    const validPassword = 'password123';
-
-    // Error message element
-    const errorMessage = document.getElementById('error-message');
-
-    if (username === validUsername && password === validPassword) {
-        // Simulate successful login (you can redirect or show a message here)
-        alert('Login successful!');
+    if (username !== 'admin' || password !== 'password') {
+        // Show error message if invalid login
+        document.getElementById('error-message').style.display = 'block';
     } else {
-        // Show error message if credentials are incorrect
-        errorMessage.textContent = 'Incorrect username or password. Please try again.';
-        errorMessage.style.display = 'block';
+        // Redirect or perform login logic
+        window.location.href = 'dashboard.html'; // Replace with actual redirect
     }
 });
